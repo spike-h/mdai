@@ -1,6 +1,5 @@
 import mdai
 import pandas as pd
-import math
 from datetime import datetime
 import os
 import requests
