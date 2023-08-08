@@ -38,6 +38,13 @@ Impression
 report_to_SR(input_report)
 ```
 
+OR
+
+```python
+report_to_SR('/content/report.txt')
+```
+
+OR
 
 ```python
 report_to_SR('/content/Untitled Folder')
