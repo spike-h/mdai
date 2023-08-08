@@ -51,36 +51,3 @@ SR_to_Annot(file_path,
 
     Importing 1 annotations into project L1NpnQBv, dataset D_0Z4qeN...                                  
     Successfully imported 1 / 1 annotations into project L1NpnQBv, dataset D_0Z4qeN.
-
-
-
-```python
-import mdai
-
-# Get variables from project info tab and user settings
-DOMAIN = 'public.md.ai'
-YOUR_PERSONAL_TOKEN = '8b80c4ca0f'
-mdai_client = mdai.Client(domain=DOMAIN, access_token=YOUR_PERSONAL_TOKEN)
-
-dataset_id = 'D_0Z4qeN'
-project_id = 'L1NpnQBv'
-label_id = 'L_QnlPAg'
-
-file_path = 'path_to_SR.dcm'
-```
-
-    Successfully authenticated to staging.md.ai.
-
-
-
-```python
-SR_to_Annot(file_path,
-            dataset_id=dataset_id,
-            project_id=project_id,
-            label_id=label_id,
-            mdai_client=mdai_client)
-```
-
-    Importing 1 annotations into project L1NpnQBv, dataset D_0Z4qeN...                                  
-    Successfully imported 1 / 1 annotations into project L1NpnQBv, dataset D_0Z4qeN.
-
