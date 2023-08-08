@@ -3,6 +3,15 @@ from pydicom import dcmread, Dataset
 import json
 
 def SR_to_Annot(file_path, json_out=False, project_id='', dataset_id='', label_id='', mdai_client=None):
+  """
+  Inputs:
+    `file_path` - File path to the SR (required)
+    `json_out` - Boolean flag to determine if should output to JSON (optional)
+    `project_id` & `dataset_id` & `label_id` - Project information necessary to output SR to annotation note. All must be present if any are present. (optional)
+    `mdai_client` - mdai client object instantiated by calling `mdai.Client`. Must be present to export SR to annotation note.
+  Outputs:
+    If `json_out` is `True` then there will be a json file in your cwd called "SR_content". If all the project and client information is filled out, then there will be an annotation with the SR content as an annotation note, for each study in the project that is referenced by the SR.
+  """
   ds = dcmread(file_path)
 
   # Get the referenced Dicom Files
