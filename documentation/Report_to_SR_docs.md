@@ -1,5 +1,5 @@
 # Report to SR
-Below is a function which inputs a report as a string/text file/directory of text files and outputs an SR document containing the information as text values
+This function  inputs a report as a string/text file/directory of text files and outputs an SR document containing the information as text values.
 
 **WARNING**: this just creates a bare bones SR document where the observations are just stored as text. There are no specified codes
          associated with any of the observations/fields on the outputted SR document.
