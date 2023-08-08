@@ -11,6 +11,8 @@ def SR_to_Annot(file_path, json_out=False, project_id='', dataset_id='', label_i
     `mdai_client` - mdai client object instantiated by calling `mdai.Client`. Must be present to export SR to annotation note.
   Outputs:
     If `json_out` is `True` then there will be a json file in your cwd called "SR_content". If all the project and client information is filled out, then there will be an annotation with the SR content as an annotation note, for each study in the project that is referenced by the SR.
+  
+  Created by Dyllan Hofflich (8/8/23)
   """
   ds = dcmread(file_path)
 
