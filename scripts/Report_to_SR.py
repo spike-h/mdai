@@ -14,6 +14,8 @@ WARNING: this just creates a bare bones SR document where the observations are j
 TODO: - Add Patient and Observer/institution demographics (fields highlighted below)
       - Change Name of outputted document
       - Change title from "SR Report"
+
+Created by Dyllan (spike) Hofflich (8/8/23)
 """
 def report_to_SR(input_report):
   if os.path.exists(input_report):
